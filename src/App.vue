@@ -1,9 +1,15 @@
 <template>
-  <div>
-  </div>
+    <div id="app" class="main">
+        <router-view />
+    </div>
 </template>
+<style>
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 
-<script setup>
-</script>
+}
+</style>
 
-<style scoped></style>
+
