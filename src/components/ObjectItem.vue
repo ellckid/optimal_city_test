@@ -9,12 +9,12 @@
                 <img class="item__icon" src="/list_icon.svg " alt="change icon">
             </button>
         </div>
-        <form class="item__form" v-bind:id="object.name" @submit.prevent="on">
+        <form class="item__form" v-bind:id="object.name" @submit.prevent="$emit('change-value', object.name, this.input)">
             <button class="form__close" @click="openForm(object.name)">
                 <img class="close__img" src="/cross.svg" />
             </button>
             <input class="form__input" type="text" v-model="input" />
-            <button class="form__button" type="submit" v-on:click="$emit('change-value', object.name,)">Change</button>
+            <button class="form__button" type="submit">Change</button>
         </form>
     </li>
 </template>
@@ -30,7 +30,8 @@ export default {
         return {
             input: 'Enter new value'
         }
-    }
+    },
+
 }
 
 </script>

@@ -14,8 +14,6 @@ export default {
 }
 </script>
 
-E0F4F9
-
 
 
 

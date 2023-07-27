@@ -42,13 +42,18 @@ export default {
     methods: {
         changeValue(id, new_value) {
             console.log(id)
+            console.log(new_value)
             this.objects.map((e) => {
-                if (e.name === id) {
-                    e.value = new_value
+                if (new_value.trim()) {
+                    if (e.name === id) {
+                        e.value = new_value
+                    }
                 }
+
             })
         }
     }
+
 }
 </script>
 
@@ -73,6 +78,8 @@ export default {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+
 }
 
 .list {
