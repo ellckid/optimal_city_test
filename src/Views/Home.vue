@@ -2,8 +2,11 @@
     <ObjectList v-bind:objects="objects" />
 </template>
 
-<script>
+<script setup>
 import ObjectList from '../components/ObjectList.vue'
+
+</script>
+<script >
 export default {
 
     components: {
