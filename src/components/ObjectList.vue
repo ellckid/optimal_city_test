@@ -58,12 +58,45 @@ export default {
 </script>
 
 <style>
+@media (min-width: 768px) {
+    .list__container {
+        gap: 50px;
+        padding: 40px;
+
+        width: 80%;
+        max-width: 1000px;
+    }
+
+    .list__h1 {
+        font-size: 40px;
+    }
+
+    .list {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .list__container {
+        gap: 30px;
+        padding: 40px 20px;
+
+        width: 90%;
+
+    }
+
+    .list__h1 {
+        font-size: 36px;
+    }
+
+    .list {
+        gap: 20px;
+    }
+}
+
 .list__container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 40px;
-    width: 80%;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 10px 30px 3px rgba(0 0 0 / 15%);
@@ -74,18 +107,14 @@ export default {
 
     color: #333;
     font-family: Inter;
-    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
-
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     list-style: none;
     padding: 0;
 }
