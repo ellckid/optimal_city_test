@@ -5,7 +5,6 @@
 <script>
 import ObjectList from '../components/ObjectList.vue'
 export default {
-    name: 'app',
 
     components: {
         ObjectList
